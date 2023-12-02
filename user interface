@@ -1,0 +1,13 @@
+import javax.swing.*;
+
+public class SimpleSwingExample {
+    public static void main(String[] args) {
+        JFrame frame = new JFrame("Hello Swing");
+        JButton button = new JButton("Click me");
+
+        frame.getContentPane().add(button);
+        frame.setSize(300, 200);
+        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        frame.setVisible(true);
+    }
+}
