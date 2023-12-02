@@ -1,0 +1,23 @@
+
+
+```java
+public class TextShortener {
+
+    public static String shortenText(String input, int maxLength) {
+        if (input.length() <= maxLength) {
+            return input; // No need to shorten if within limit
+        } else {
+            return input.substring(0, maxLength - 3) + "...";
+        }
+    }
+
+    public static void main(String[] args) {
+        String originalText = "This is a long piece of text that needs to be shortened.";
+        int maxLength = 20;
+
+        String shortenedText = shortenText(originalText, maxLength);
+
+        System.out.println("Original Text: " + originalText);
+        System.out.println("Shortened Text: " + shortenedText);
+    }
+}
